@@ -109,34 +109,7 @@ if ($register == false)
                 goto pengen;
             }
 			
-			<!--[TAMBAHAN]-->
-			claim2:
-            $claim = claim2($verif);
-            if ($claim == false ) {
-                echo "\e[92m[!]".$claim['errors'][0]['message']."\n";
-                sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOOD PRAKTIS!\n";
-                sleep(3);
-
-            }
-            else{
-                echo "\e[92m[+] ".$claim."\n";
-                sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOOD PRAKTIS !\n";
-                sleep(3);
-                goto pengen;
-            }
-			
-            pengen:
-            $claim = cekvocer($verif);
-            if ($claim == false ) {
-                echo "\033VOUCHER INVALID/GAGAL REDEEM\n";
-            }
-            else{
-                echo "\e[92m[+] ".$claim."\n";
-                
-        }
-    }
+      }		
     }
 
 
